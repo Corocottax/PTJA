@@ -43,7 +43,7 @@ const Score = ({ setMatches, matches }) => {
     }
     // actualizamos también el valor de los goles totales, sumándole 1
     let goals = match.totalGoals + 1;
-    newMatchUpdate = { ...match, totalGoals: goals };
+    newMatchUpdate = { ...newMatchUpdate, totalGoals: goals };
     // seteamos nuestro partido con los nuevos datos
     setMatch(newMatchUpdate);
   };
