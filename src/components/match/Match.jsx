@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./match.scss";
 
 const Match = ({ matches }) => {
+
+  // aquí solo cambié los nombres de las variables y estados para unas mejores prácticas, tenías match en vez de matches cuando eran varios etc.
   const primerValor = () => {
-    console.log(matches);
     matches &&
       matches.map((match) => {
         return (
