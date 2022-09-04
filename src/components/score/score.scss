@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    h1{
+        text-align: center;
+    }
+}
+
+.container-score{
+    display:flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    /* width: 50%; */
+}
+.container-score__item{
+        
+        /* width: 25%; */
+       
+        margin:15px;
+    }
+ 
