@@ -19,7 +19,7 @@ const Match = ({ matches }) => {
   };
   const [sortedMatches, setSortedMatches] = useState(primerValor);
 
-  const sortBoard = (event) => {
+  const sortBoard = () => {
     const sortMatches = matches.sort((a, b) => {
       if (a.totalGoals < b.totalGoals) {
         return 1;
@@ -41,14 +41,15 @@ const Match = ({ matches }) => {
 
   useEffect(() => {
     sortBoard()
-  }, [])
+  }, [matches])
 
   return (
     <div className="board-matches">
       <h2>Matches</h2>
       <div className="container-matches">
-        {matches &&
-          matches.map((match) => {
+      {sortedMatches && console.log(sortedMatches)}
+        {sortedMatches &&
+          sortedMatches.map((match) => {
             return (
               <div className="container-matches__item">
                 <p>
